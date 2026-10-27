@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2027 GR86 — Toyota</title>
+  <link rel="stylesheet" href="estilos_performance/stylecarroGR86.css">
+</head>
+<body>
+
+<header class="topbar" id="topbar">
+  <a class="brand" href="#overview">TOYOTA <span>GR86</span></a>
+  <nav>
+    <div class="dropdown">
+      <button class="dropdown-toggle" aria-expanded="false" aria-controls="menuOverview">
+        Visão geral <span class="chevron">⌄</span>
+      </button>
+      <ul class="dropdown-menu" id="menuOverview" hidden>
+        <li><a href="#viewer">Cores</a></li>
+        <li><a href="#specs">Especificações</a></li>
+        <li><a href="#gallery">Galeria</a></li>
+        <li><a href="#performance">Desempenho</a></li>
+      </ul>
+    </div>
+    <a href="#offers">Ofertas</a>
+    <a class="build" href="#offers">Construir</a>
+  </nav>
+</header>
+
+<section class="hero" id="overview">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <span class="eyebrow">2027</span>
+    <h1>GR86</h1>
+    <p>US$ 31.500* <small>Preço inicial sugerido pelo fabricante</small></p>
+    <a class="outline-btn white" href="#offers">Construir o seu</a>
+  </div>
+</section>
+
+<section class="viewer-section" id="viewer">
+  <div class="section-heading">
+    <h2>A vida começa no limite máximo.</h2>
+    <p>Projetado com o desempenho como princípio fundamental, o GR86 combina agilidade e leveza, curvas precisas e a emoção da tração traseira em uma máquina que aprofunda sua conexão com a estrada.</p>
+  </div>
+
+  <div class="car-viewer">
+    <img id="carImage" class="car-image" src="" alt="Toyota GR86 2027" draggable="false">
+    <div class="rotate-controls">
+      <button id="prevImage" aria-label="Imagem anterior">‹</button>
+      <span>ARRASTE PARA GIRAR</span>
+      <button id="nextImage" aria-label="Próxima imagem">›</button>
+    </div>
+  </div>
+
+  <div class="color-picker" id="colorPicker" role="radiogroup" aria-label="Cor externa"></div>
+  <div class="color-name" id="colorName">Raven</div>
+  <small class="disclaimer">* Preços e cores podem variar conforme o modelo. Imagens meramente ilustrativas.</small>
+</section>
+
+<section class="specs" id="specs">
+  <div class="section-heading">
+    <span class="eyebrow">GR86</span>
+    <h2>Especificações do GR86</h2>
+    <a class="outline-btn" href="#features">Veja todas as especificações</a>
+  </div>
+  <div class="spec-grid">
+    <article><span>DESEMPENHO</span><strong>6,1</strong><small>segundos 0–60 MPH (manual)</small></article>
+    <article><span>MOTOR</span><strong>228</strong><small>hp, boxer 2.4L de 4 cilindros</small></article>
+    <article><span>TRANSMISSÃO</span><strong>6</strong><small>velocidades, manual ou automática</small></article>
+    <article><span>TRAÇÃO</span><strong>RWD</strong><small>tração traseira</small></article>
+  </div>
+</section>
+
+<section class="feature-split dark" id="features">
+  <div class="feature-copy">
+    <span class="eyebrow">NOVA COR PARA 2027</span>
+    <h2>Mais controle.<br>Mais confiança.</h2>
+    <p>Aceleração com resposta mais linear, troca de marcha da quinta para a quarta mais precisa, nova cor Thunder e o interior Cockpit Red com detalhes em couro vermelho.</p>
+  </div>
+  <div class="feature-image"><img src="https://pressroom.toyota.com/wp-content/uploads/2026/05/2027_Toyota_GR86_Premium_TruenoBlue_003-1500x997.jpg" alt="GR86 Trueno Blue"></div>
+</section>
+
+<section class="gallery-section" id="gallery">
+  <div class="section-heading">
+    <span class="eyebrow">2027 GR86</span>
+    <h2>Adrenalina em cada curva.</h2>
+    <p>Explore exterior, interior e diferentes ângulos do GR86.</p>
+  </div>
+  <div class="tabs" role="tablist">
+    <button class="active" role="tab" data-gallery="exterior">Exterior</button>
+    <button role="tab" data-gallery="interior">Interior</button>
+    <button role="tab" data-gallery="views">Vistas de 360°</button>
+  </div>
+  <div class="gallery-grid" id="galleryGrid"></div>
+</section>
+
+<section class="design-section">
+  <div class="section-heading">
+    <span class="eyebrow">PROJETO</span>
+    <h2>Intenção em cada ângulo.</h2>
+    <p>Proporções esportivas, estrutura leve e detalhes funcionais foram pensados para manter o GR86 conectado à estrada.</p>
+  </div>
+  <img class="wide-image" src="https://pressroom.toyota.com/wp-content/uploads/2026/05/2027_Toyota_GR86_Premium_TruenoBlue_003-1500x997.jpg" alt="GR86 design">
+</section>
+
+<section class="performance-section" id="performance">
+  <div class="section-heading">
+    <span class="eyebrow">DESEMPENHO E MANUSEIO</span>
+    <h2>É impactante.</h2>
+    <p>Com motor boxer 2.4L de 228 hp, tração traseira e transmissão manual ou automática de seis velocidades, o GR86 foi desenvolvido para uma condução direta e envolvente.</p>
+  </div>
+  <div class="tabs" role="tablist">
+    <button class="active" role="tab" data-performance="performance">Desempenho</button>
+    <button role="tab" data-performance="handling">Manuseio</button>
+  </div>
+  <div class="performance-content">
+    <img id="performanceImage" src="" alt="GR86 desempenho">
+    <div>
+      <span class="eyebrow" id="performanceLabel">DESEMPENHO</span>
+      <h3 id="performanceTitle"></h3>
+      <p id="performanceText"></p>
+    </div>
+  </div>
+</section>
+
+<section class="gazoo dark">
+  <div>
+    <span class="eyebrow">GAZOO RACING</span>
+    <h2>Construído por entusiastas para entusiastas.</h2>
+    <p>O GR86 leva a filosofia de performance da GAZOO Racing para a rua. O Pacote Performance opcional inclui freios Brembo® e amortecedores SACHS®.</p>
+    <a class="outline-btn white" href="#offers">Conheça o GR86</a>
+  </div>
+</section>
+
+<section class="offers" id="offers">
+  <span class="eyebrow">ENCONTRE O SEU GR86</span>
+  <h2>Pronto para acelerar?</h2>
+  <p>Descubra ofertas, versões e configure o seu GR86.</p>
+  <a class="build dark-btn" href="#">Construir o seu GR86</a>
+</section>
+
+<script src="script_performance/scriptcarroGR86.js"></script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2026 GR Corolla — Toyota GAZOO Racing</title>
+  <link rel="stylesheet" href="estilos_performance/corrolagr.css">
+</head>
+
+<body>
+
+  <header class="topbar" id="topbar">
+    <a class="brand" href="#overview">TOYOTA <span>GR COROLLA</span></a>
+    <nav>
+      <div class="dropdown">
+        <button class="dropdown-toggle" aria-expanded="false" aria-controls="menuOverview">
+          Visão geral <span class="chevron">⌄</span>
+        </button>
+        <ul class="dropdown-menu" id="menuOverview" hidden>
+          <li><a href="#viewer">Cores</a></li>
+          <li><a href="#specs">Especificações</a></li>
+          <li><a href="#gallery">Galeria</a></li>
+          <li><a href="#performance">Desempenho</a></li>
+        </ul>
+      </div>
+      <a href="#offers">Ofertas</a>
+      <a class="build" href="#offers">Construir</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="overview">
+    <video class="hero-video" autoplay muted loop playsinline
+      poster="https://www.toyota.com/content/dam/toyota/vehicles/2026/grcorolla/mlp/welcomemat/TYCK3067000H.jpg">
+      <source
+        src="https://www.toyota.com/content/dam/toyota/vehicles/2026/grcorolla/mlp/welcomemat/TYCK3067000H.mp4?wid=1439"
+        type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="eyebrow">2026</span>
+      <h1>GR COROLLA</h1>
+      <p>US$ 38.860* <small>Preço inicial sugerido pelo fabricante (MSRP)</small></p>
+      <a class="outline-btn white" href="#offers">Construir o seu</a>
+    </div>
+  </section>
+
+  <section class="viewer-section" id="viewer">
+    <div class="section-heading">
+      <h2>Nascido nos ralis. Testado no limite.</h2>
+      <p>Desenvolvido sob o olhar atento de Akio Toyoda e da equipa GAZOO Racing, o GR Corolla traz o sistema de tração
+        integral GR-FOUR, motor turbo de 3 cilindros e a adrenalina do automobilismo para o dia a dia.</p>
+    </div>
+
+    <div class="car-viewer">
+      <img id="carImage" class="car-image" src="" alt="Toyota GR Corolla 2026" draggable="false">
+      <div class="rotate-controls">
+        <button id="prevImage" aria-label="Imagem anterior">‹</button>
+        <span>ARRASTE PARA GIRAR / ALTERNAR</span>
+        <button id="nextImage" aria-label="Próxima imagem">›</button>
+      </div>
+    </div>
+
+    <div class="color-picker" id="colorPicker" role="radiogroup" aria-label="Cor externa"></div>
+    <div class="color-name" id="colorName">Ice Cap</div>
+    <small class="disclaimer">* Preços e cores podem variar conforme a versão e região. Imagens meramente
+      ilustrativas.</small>
+  </section>
+
+  <section class="specs" id="specs">
+    <div class="section-heading">
+      <span class="eyebrow">GR COROLLA</span>
+      <h2>Especificações de Alta Performance</h2>
+      <a class="outline-btn" href="#features">Veja todas as especificações</a>
+    </div>
+    <div class="spec-grid">
+      <article><span>POTÊNCIA</span><strong>300</strong><small>hp @ 6.500 RPM</small></article>
+      <article><span>MOTOR</span><strong>1.6L</strong><small>3-Cilindros Turbo G16E-GTS</small></article>
+      <article><span>TRANSMISSÃO</span><strong>6-Vel / DAT</strong><small>Manual iMT ou Automática DAT de 8 Vel.</small>
+      </article>
+      <article><span>TRAÇÃO</span><strong>GR-FOUR</strong><small>AWD com distribuição variável</small></article>
+    </div>
+  </section>
+
+  <section class="feature-split dark" id="features">
+    <div class="feature-copy">
+      <span class="eyebrow">NOVIDADE PARA 2026</span>
+      <h2>Transmissão Automática DAT & Mais Torque.</h2>
+      <p>Agora disponível com a nova Transmissão Automática Direct Automatic Transmission (DAT) de 8 velocidades com
+        patilhas no volante, mantendo o controlo visceral e resposta imediata nas pistas.</p>
+    </div>
+    <div class="feature-image">
+      <img
+        src="https://pressroom.toyota.com/wp-content/uploads/2024/08/2025_Toyota_GRCorolla_PremiumPlus_HeavyMetal_002-1500x1000.jpg"
+        alt="GR Corolla Interior e Cockpit">
+    </div>
+  </section>
+
+  <section class="gallery-section" id="gallery">
+    <div class="section-heading">
+      <span class="eyebrow">2026 GR COROLLA</span>
+      <h2>Adrenalina sob todos os ângulos.</h2>
+      <p>Explore o design aerodinâmico, o interior focado no condutor e os detalhes de competição.</p>
+    </div>
+    <div class="tabs" role="tablist">
+      <button class="active" role="tab" data-gallery="exterior">Exterior</button>
+      <button role="tab" data-gallery="interior">Interior</button>
+      <button role="tab" data-gallery="views">Detalhes GR</button>
+    </div>
+    <div class="gallery-grid" id="galleryGrid"></div>
+  </section>
+
+  <section class="design-section">
+    <div class="section-heading">
+      <span class="eyebrow">DESIGN & AERODINÂMICA</span>
+      <h2>Funcionalidade e agressividade.</h2>
+      <p>Para-choques alargados, tomadas de ar funcionais no capô e tripla saída de escape concebidas para otimizar o
+        fluxo de ar e o arrefecimento.</p>
+    </div>
+    <img class="wide-image"
+      src="https://pressroom.toyota.com/wp-content/uploads/2024/08/2025_Toyota_GRCorolla_PremiumPlus_HeavyMetal_001-1500x1000.jpg"
+      alt="GR Corolla Design">
+  </section>
+
+  <section class="performance-section" id="performance">
+    <div class="section-heading">
+      <span class="eyebrow">DESEMPENHO E ENGENHARIA</span>
+      <h2>Pura engenharia de competição.</h2>
+      <p>Construído na fábrica dedicada GR Factory em Motomachi, Japão, com soldas adicionais e reforços estruturais no
+        chassis.</p>
+    </div>
+    <div class="tabs" role="tablist">
+      <button class="active" role="tab" data-performance="performance">Desempenho</button>
+      <button role="tab" data-performance="handling">Tração GR-FOUR</button>
+    </div>
+    <div class="performance-content">
+      <img id="performanceImage" src="" alt="GR Corolla Desempenho">
+      <div>
+        <span class="eyebrow" id="performanceLabel">DESEMPENHO</span>
+        <h3 id="performanceTitle"></h3>
+        <p id="performanceText"></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="gazoo dark">
+    <div>
+      <span class="eyebrow">TOYOTA GAZOO RACING</span>
+      <h2>Testado pelos melhores pilotos do mundo.</h2>
+      <p>O GR Corolla passou por testes rigorosos em circuitos lendários como Fuji Speedway e troços de rali em piso de
+        neve e gravilha.</p>
+      <a class="outline-btn white" href="#offers">Conheça as Versões</a>
+    </div>
+  </section>
+
+  <section class="offers" id="offers">
+    <span class="eyebrow">ENCONTRE O SEU GR COROLLA</span>
+    <h2>Pronto para assumir o controlo?</h2>
+    <p>Configure o seu GR Corolla com as especificações e pacotes pretendidos.</p>
+    <a class="build dark-btn" href="#">Construir o seu GR Corolla</a>
+  </section>
+  <!-- No seu HTML -->
+  <a href="#overview" class="brand-logo">
+    <img src="https://www.toyota.com/content/dam/toyota/logos/gr_corolla_logo.png" alt="GR Corolla Emblem"
+      class="gr-emblem">
+  </a>
+
+  <script src="script_performance/scriptGR.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>2027 Corolla | Toyota</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Seu CSS SEMPRE depois do Bootstrap, para poder sobrescrever -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero-container" id="overview">
+        <header class="topbar">
+            <div class="topbar-inner">
+                <a href="#" class="logo"><span class="logo-icone"></span>TOYOTA</a>
+                <nav class="topbar-links">
+                    <a href="#">Veículos</a>
+                    <a href="#">Loja</a>
+                    <a href="#">Suporte e Serviços</a>
+                </nav>
+                <a href="#" class="topbar-conta">Conta</a>
+            </div>
+        </header>
+
+        <img src="./Imagens%20corolla/Video%20Corolla.png" alt="Corolla 2027 vermelho ao lado de um Corolla clássico"
+            class="hero-image">
+
+        <div class="hero-textos">
+            <h1>2027 Corolla</h1>
+            <h5>Preço inicial sugerido pelo fabricante: <strong>US $23,325*</strong></h5>
+        </div>
+
+        <nav class="previas">
+            <span class="previas-modelo">2027 Corolla</span>
+            <div class="previas-links">
+                <a href="#overview" class="ativo">Overview</a>
+                <a href="#specs">Specs</a>
+                <a href="#galeria">Gallery</a>
+                <a href="#features">Features</a>
+                <a href="#trims">Trims</a>
+                <a href="#offers">Offers</a>
+                <a href="#" class="btn-pilula btn-pilula-branco">Build</a>
+            </div>
+        </nav>
+    </section>
+
+    <!-- ========== TÍTULO + CORES ========== -->
+    <section class="intro">
+        <div class="titulo1">
+            <h1>Com 60 anos de experiência. Em plena atividade hoje.</h1>
+            <p>Cause uma impressão duradoura com o design arrojado, a tecnologia inteligente e o legado de qualidade e
+                confiabilidade do Corolla, que certamente tornarão cada momento emocionante.</p>
+        </div>
+
+        <div class="carColor">
+            <img src="./Imagens corolla/azul.png" alt="Corolla Azul" class="carColor-img" id="carImg">
+
+            <div class="swatches" id="swatches">
+                <button type="button" class="swatch ativo" style="--cor: #1e2a52" data-nome="Azul"
+                    data-img="./Imagens corolla/azul.png" aria-label="Azul"></button>
+                <button type="button" class="swatch" style="--cor: #ffffff" data-nome="Branco"
+                    data-img="./Imagens corolla/branco.png" aria-label="Branco"></button>
+                <button type="button" class="swatch" style="--cor: #8a8f98" data-nome="Cinza"
+                    data-img="./Imagens corolla/cinza.png" aria-label="Cinza"></button>
+                <button type="button" class="swatch" style="--cor: #4a4d52" data-nome="Cinza escuro"
+                    data-img="./Imagens corolla/cinza escuro.png" aria-label="Cinza escuro"></button>
+                <button type="button" class="swatch" style="--cor: #b9bcc0" data-nome="Metálico"
+                    data-img="./Imagens corolla/metalico.png" aria-label="Metálico"></button>
+                <button type="button" class="swatch" style="--cor: #141414" data-nome="Preto"
+                    data-img="./Imagens corolla/preto.png" aria-label="Preto"></button>
+                <button type="button" class="swatch" style="--cor: #e4ece8" data-nome="Sensação térmica"
+                    data-img="./Imagens corolla/Sensação termica.png" aria-label="Sensação térmica"></button>
+                <button type="button" class="swatch" style="--cor: #a01212" data-nome="Vermelho"
+                    data-img="./Imagens corolla/vermelho.png" aria-label="Vermelho"></button>
+                <button type="button" class="swatch" style="--cor: linear-gradient(135deg, #1e2a52 50%, #111 50%)"
+                    data-nome="Azul com teto preto" data-img="./Imagens corolla/azul teto preto.png"
+                    aria-label="Azul com teto preto"></button>
+                <button type="button" class="swatch" style="--cor: linear-gradient(135deg, #ffffff 50%, #111 50%)"
+                    data-nome="Branco com teto preto" data-img="./Imagens corolla/branco teto preto.png"
+                    aria-label="Branco com teto preto"></button>
+                <button type="button" class="swatch" style="--cor: linear-gradient(135deg, #6f7f9a 50%, #111 50%)"
+                    data-nome="Celestial com teto preto" data-img="./Imagens corolla/Celestial teto preto.png"
+                    aria-label="Celestial com teto preto"></button>
+                <button type="button" class="swatch" style="--cor: linear-gradient(135deg, #4a4d52 50%, #111 50%)"
+                    data-nome="Cinza escuro com teto preto" data-img="./Imagens corolla/cinza escuro teto preto.png"
+                    aria-label="Cinza escuro com teto preto"></button>
+                <button type="button" class="swatch" style="--cor: linear-gradient(135deg, #8a8f98 50%, #111 50%)"
+                    data-nome="Cinza com teto preto" data-img="./Imagens corolla/cinza teto preto.png"
+                    aria-label="Cinza com teto preto"></button>
+                <button type="button" class="swatch" style="--cor: linear-gradient(135deg, #e4ece8 50%, #111 50%)"
+                    data-nome="Sensação térmica com teto preto"
+                    data-img="./Imagens corolla/sensação termica teto preto.png"
+                    aria-label="Sensação térmica com teto preto"></button>
+                <button type="button" class="swatch" style="--cor: linear-gradient(135deg, #a01212 50%, #111 50%)"
+                    data-nome="Vermelho com teto preto" data-img="./Imagens corolla/vermelho teto preto.png"
+                    aria-label="Vermelho com teto preto"></button>
+            </div>
+
+            <p class="carColor-nome" id="corNome">Azul</p>
+            <p class="carColor-aviso">Preços e cores podem variar de acordo com o modelo.</p>
+
+            <div class="carColor-botoes">
+                <a href="#" class="btn-pilula btn-pilula-contorno">Shop</a>
+                <a href="#" class="btn-pilula btn-pilula-preto">Build Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ESPECIFICAÇÕES ========== -->
+    <section class="especificacoesCorolla" id="specs">
+        <div class="conteudo">
+            <h2>Especificações do Corolla</h2>
+            <div class="especificacoes-corolla-card-container">
+                <div class="cardEsp">
+                    <h3>Trem de força</h3>
+                    <p>Gasolina ou Híbrido</p>
+                </div>
+                <div class="cardEsp">
+                    <h3>Classificação estimada cidade/rodovia</h3>
+                    <p>Classificação estimada de consumo combinado de 50 MPG (milhas por galão) na versão híbrida
+                        XLE.*</p>
+                </div>
+                <div class="cardEsp">
+                    <h3>Tecnologia</h3>
+                    <p>Painel de instrumentos digital de 12,3 polegadas disponível</p>
+                </div>
+            </div>
+            <a href="#" class="btn-pilula btn-pilula-preto">Ver todas as especificações</a>
+        </div>
+    </section>
+
+    <!-- ========== GALERIA ========== -->
+    <section class="galeria-secao" id="galeria">
+        <div class="titulo2">
+            <h6>Corolla</h6>
+            <h2>Celebrando seis décadas de grandeza.</h2>
+        </div>
+
+        <!-- Abas: usa só nav-tabs/nav-link do Bootstrap (btn-group não era necessário) -->
+        <ul class="nav nav-tabs abas" id="corollaTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="exterior-tab" data-bs-toggle="tab" data-bs-target="#exterior"
+                    type="button" role="tab" aria-controls="exterior" aria-selected="true">Exterior</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="interior-tab" data-bs-toggle="tab" data-bs-target="#interior" type="button"
+                    role="tab" aria-controls="interior" aria-selected="false">Interior</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="visao360-tab" data-bs-toggle="tab" data-bs-target="#visao360" type="button"
+                    role="tab" aria-controls="visao360" aria-selected="false">Visão 360°</button>
+            </li>
+        </ul>
+
+        <div class="tab-content conteudo" id="corollaTabsContent">
+
+            <!-- ABA EXTERIOR -->
+            <div class="tab-pane fade show active" id="exterior" role="tabpanel" aria-labelledby="exterior-tab">
+                <div class="galeria Exterior">
+                    <img src="https://delivery.tcom.assetscs.toyota.com/adobe/assets/urn:aaid:aem:f48ad6af-ddec-4a23-aaf6-ad7d9dc69a55/as/COH_MY27_0020_V001.png?smartcrop=16-9&amp;width=768"
+                        alt="Corolla Exterior 1">
+                    <img src="https://delivery.tcom.assetscs.toyota.com/adobe/assets/urn:aaid:aem:b9b59b7b-1bbc-4853-8e5a-d8f828e92767/as/COH_MY26_0022_V001.png?smartcrop=4-3&amp;width=768"
+                        alt="Corolla Exterior 2">
+                    <img src="https://delivery.tcom.assetscs.toyota.com/adobe/assets/urn:aaid:aem:10111009-723f-440c-908f-8c526d92d40c/as/COR_MY23_0024_V001.png?smartcrop=4-3&amp;width=768"
+                        alt="Corolla Exterior 3">
+                    <img src="https://delivery.tcom.assetscs.toyota.com/adobe/assets/urn:aaid:aem:f569ece2-bb11-4619-b11b-06a012f2639c/as/COH_MY27_0018_V001.png?smartcrop=1-1&amp;width=768"
+                        alt="Corolla Exterior 4">
+                </div>
+            </div>
+
+            <!-- ABA INTERIOR -->
+            <div class="tab-pane fade" id="interior" role="tabpanel" aria-labelledby="interior-tab">
+                <div class="galeria Interior">
+                    <img src="https://delivery.tcom.assetscs.toyota.com/adobe/assets/urn:aaid:aem:15b766cb-334f-4046-b0a6-d2bea52110a9/as/COH_MY26_0011_V002.png?smartcrop=16-9&amp;width=768"
+                        alt="Corolla Interior 1">
+                    <img src="https://delivery.tcom.assetscs.toyota.com/adobe/assets/urn:aaid:aem:a75bd784-a325-44fb-a363-de62f12c3e6e/as/COH_MY23_0040_V001.png?smartcrop=4-3&amp;width=768"
+                        alt="Corolla Interior 2">
+                    <img src="https://delivery.tcom.assetscs.toyota.com/adobe/assets/urn:aaid:aem:2cab2905-0628-4a1c-a2bd-e7f8b1c69fc7/as/COH_MY23_0039_V001.png?smartcrop=4-3&amp;width=768"
+                        alt="Corolla Interior 3">
+                    <img src="https://delivery.tcom.assetscs.toyota.com/adobe/assets/urn:aaid:aem:4faf10c4-675c-4976-8e70-3273c341737c/as/COH_MY27_0009_V001.png?smartcrop=1-1&amp;width=768"
+                        alt="Corolla Interior 4">
+                </div>
+            </div>
+
+            <!-- ABA VISÃO 360 -->
+            <div class="tab-pane fade" id="visao360" role="tabpanel" aria-labelledby="visao360-tab">
+                <div class="Visao360">
+                    <p>Visão 360° em breve.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== BANNER FINAL ========== -->
+    <section class="hero-container hero-final">
+        <!-- smartcrop=2-3 gera imagem em pé; para banner largo use 16-9 -->
+        <img src="https://delivery.tcom.assetscs.toyota.com/adobe/assets/urn:aaid:aem:78fd81dd-135a-4f6b-8dc9-ae82098120ba/as/COH_MY27_0019_V002.png?smartcrop=16-9&amp;width=1920"
+            alt="Corolla 2027 e Corolla clássico vistos por trás" class="hero-image">
+        <div class="Titulo3">
+            <h6>COROLLA HÍBRIDO 2027 60º ANIVERSÁRIO</h6>
+            <h3>Do passado ao presente, a jornada continua.</h3>
+            <a href="#" class="btn-pilula btn-pilula-branco">Saiba mais</a>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <script>
+        // Troca a imagem do carro e o nome da cor ao clicar numa bolinha
+        const swatches = document.querySelectorAll('.swatch');
+        const corNome = document.getElementById('corNome');
+        const carImg = document.getElementById('carImg');
+
+        // pré-carrega as imagens para a troca ser instantânea
+        swatches.forEach(function (swatch) {
+            new Image().src = swatch.dataset.img;
+        });
+
+        swatches.forEach(function (swatch) {
+            swatch.addEventListener('click', function () {
+                swatches.forEach(function (s) { s.classList.remove('ativo'); });
+                swatch.classList.add('ativo');
+                carImg.src = swatch.dataset.img;
+                carImg.alt = 'Corolla ' + swatch.dataset.nome;
+                corNome.textContent = swatch.dataset.nome;
+            });
+        });
+    </script>
+</body>
+
+</html>

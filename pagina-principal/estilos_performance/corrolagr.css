@@ -1,0 +1,596 @@
+:root {
+  --red: #eb0a1e;
+  --ink: #050505;
+  --grey: #f3f3f2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 68px;
+}
+
+body {
+  margin: 0;
+  font-family: "Toyota Type", "Segoe UI", Arial, sans-serif;
+  color: var(--ink);
+  background: #fff;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button, a {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+:focus-visible {
+  outline: 2px solid var(--red);
+  outline-offset: 3px;
+}
+
+/* Barra Superior / Header */
+.topbar {
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 68px;
+  background: var(--ink);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 46px;
+  transition: transform 0.3s ease;
+}
+
+.topbar.hidden {
+  transform: translateY(-100%);
+}
+
+.topbar a, .dropdown-toggle {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  background: none;
+  border: 0;
+}
+
+.brand {
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+
+.brand span {
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-left: 10px;
+  opacity: 0.8;
+  color: var(--red);
+}
+
+.topbar nav {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.chevron {
+  display: inline-flex;
+  background: #fff;
+  color: #000;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  margin-left: 7px;
+  transition: transform 0.2s;
+}
+
+.dropdown-toggle[aria-expanded="true"] .chevron {
+  transform: rotate(180deg);
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 48px;
+  left: 0;
+  min-width: 200px;
+  margin: 0;
+  padding: 8px 0;
+  list-style: none;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.25);
+}
+
+.dropdown-menu a {
+  display: block;
+  color: #000;
+  padding: 12px 20px;
+}
+
+.dropdown-menu a:hover {
+  background: var(--grey);
+}
+
+.build {
+  background: #fff !important;
+  color: #000 !important;
+  border-radius: 28px;
+  padding: 13px 36px;
+}
+
+.build:hover {
+  background: var(--red) !important;
+  color: #fff !important;
+}
+
+/* Hero com Vídeo */
+.hero {
+  height: 100vh;
+  min-height: 650px;
+  position: relative;
+  background: #111;
+  overflow: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(0,0,0,0.7), rgba(0,0,0,0.2) 65%, rgba(0,0,0,0.5));
+}
+
+.hero-content {
+  position: absolute;
+  left: 7%;
+  bottom: 15%;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: clamp(48px, 8vw, 110px);
+  line-height: 0.9;
+  margin: 12px 0;
+}
+
+.hero p {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 24px;
+}
+
+.hero p small {
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 4px;
+}
+
+.eyebrow {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+/* Títulos de Seção */
+.section-heading {
+  text-align: center;
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 72px 25px 35px;
+}
+
+.section-heading h2 {
+  font-size: clamp(38px, 4.3vw, 62px);
+  margin: 12px 0 18px;
+  line-height: 1.08;
+}
+
+.section-heading p {
+  font-size: 16px;
+  line-height: 1.55;
+  margin: auto;
+  max-width: 1000px;
+}
+
+/* Visualizador de Cores */
+.viewer-section {
+  background: var(--grey);
+  padding-bottom: 40px;
+}
+
+.car-viewer {
+  max-width: 930px;
+  margin: auto;
+}
+
+.car-image {
+  width: 100%;
+  height: 420px;
+  object-fit: contain;
+  user-select: none;
+  touch-action: pan-y;
+  cursor: grab;
+  transition: opacity 0.18s ease;
+}
+
+.car-image:active {
+  cursor: grabbing;
+}
+
+.rotate-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+  margin-top: 4px;
+}
+
+.rotate-controls button {
+  border: 0;
+  background: transparent;
+  font-size: 39px;
+  line-height: 1;
+}
+
+.rotate-controls span {
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+.color-picker {
+  display: flex;
+  justify-content: center;
+  gap: 17px;
+  margin-top: 35px;
+  flex-wrap: wrap;
+}
+
+.color-dot {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  border: 1px solid #111;
+  position: relative;
+}
+
+.color-dot.active::after {
+  content: '';
+  position: absolute;
+  inset: -6px;
+  border: 2px solid #111;
+  border-radius: 50%;
+}
+
+.color-name {
+  text-align: center;
+  margin-top: 22px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.disclaimer {
+  display: block;
+  text-align: center;
+  margin-top: 30px;
+  color: #555;
+}
+
+/* Especificações */
+.specs {
+  background: #dededc;
+  padding-bottom: 90px;
+}
+
+.spec-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: #999;
+}
+
+.spec-grid article {
+  background: #dededc;
+  text-align: center;
+  padding: 40px 20px;
+  min-height: 180px;
+}
+
+.spec-grid span {
+  font-size: 11px;
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+
+.spec-grid strong {
+  display: block;
+  font-size: 42px;
+  margin: 20px 0 8px;
+}
+
+.spec-grid small {
+  font-size: 14px;
+}
+
+/* Botões Estilizados */
+.outline-btn {
+  display: inline-block;
+  margin-top: 18px;
+  border: 1px solid #111;
+  border-radius: 25px;
+  padding: 13px 24px;
+  color: #111;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 13px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.outline-btn:hover {
+  background: #111;
+  color: #fff;
+}
+
+.outline-btn.white {
+  color: #fff;
+  border-color: #fff;
+}
+
+.outline-btn.white:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* Seções Escuras e Divididas */
+.dark {
+  background: var(--ink);
+  color: #fff;
+}
+
+.feature-split {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  min-height: 620px;
+}
+
+.feature-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px clamp(30px, 7vw, 110px);
+}
+
+.feature-copy h2 {
+  font-size: clamp(42px, 5vw, 72px);
+  line-height: 1;
+  margin: 15px 0;
+}
+
+.feature-copy p {
+  max-width: 520px;
+  line-height: 1.6;
+}
+
+.feature-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Abas */
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 5px 0 35px;
+}
+
+.tabs button {
+  background: none;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  padding: 10px 3px;
+  font-weight: 700;
+  color: #555;
+}
+
+.tabs button.active {
+  border-color: var(--red);
+  color: #000;
+}
+
+/* Galeria e Imagens Grandes */
+.gallery-section {
+  padding-bottom: 90px;
+}
+
+.gallery-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  padding: 0 20px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+}
+
+.design-section {
+  background: #e9e9e7;
+  padding-bottom: 90px;
+}
+
+.wide-image {
+  width: min(1200px, calc(100% - 40px));
+  height: 600px;
+  object-fit: cover;
+  margin: auto;
+}
+
+/* Seção de Desempenho */
+.performance-section {
+  background: #f2f2f0;
+  padding-bottom: 100px;
+}
+
+.performance-content {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.4fr 0.6fr;
+  gap: 45px;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.performance-content img {
+  width: 100%;
+  height: 560px;
+  object-fit: cover;
+}
+
+.performance-content h3 {
+  font-size: 42px;
+  line-height: 1.05;
+}
+
+.performance-content p {
+  line-height: 1.6;
+}
+
+/* GAZOO Racing & Chamada Final */
+.gazoo {
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  padding: 80px 9%;
+  background: linear-gradient(90deg, #050505, #111 55%, #222);
+}
+
+.gazoo h2 {
+  font-size: clamp(42px, 5vw, 75px);
+  max-width: 850px;
+  line-height: 1;
+  margin: 15px 0;
+}
+
+.gazoo p {
+  max-width: 620px;
+  line-height: 1.6;
+}
+
+.offers {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.offers h2 {
+  font-size: clamp(42px, 5vw, 70px);
+  margin: 15px 0;
+}
+
+.offers p {
+  margin-bottom: 30px;
+}
+
+.dark-btn {
+  display: inline-block;
+  text-decoration: none;
+  background: var(--ink) !important;
+  color: #fff !important;
+}
+
+@media(prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media(max-width: 800px) {
+  .topbar {
+    padding: 0 18px;
+  }
+  .brand {
+    display: none;
+  }
+  .topbar nav {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .hero-content {
+    bottom: 10%;
+  }
+  .spec-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .feature-split, .performance-content, .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+  .feature-image {
+    height: 420px;
+  }
+  .gallery-grid img {
+    height: 300px;
+  }
+  .wide-image {
+    height: 400px;
+  }
+  .performance-content img {
+    height: 360px;
+  }
+  .car-image {
+    height: 310px;
+  }
+  .rotate-controls {
+    gap: 20px;
+  }
+  .section-heading {
+    padding-top: 55px;
+  }
+  .color-picker {
+    gap: 12px;
+  }
+  .color-dot {
+    width: 29px;
+    height: 29px;
+  }
+}
+.gr-emblem {
+  height: 28px;
+  width: auto;
+  display: block;
+}   
